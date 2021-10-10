@@ -4,85 +4,142 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/background"
-    tools:context=".MainActivity">
+    tools:context=".ui.CalculatorActivity">
 
     <LinearLayout
         android:id="@+id/result_layout"
         android:layout_width="match_parent"
         android:layout_height="200dp"
-        android:background="@drawable/rounded_cornes"
+        android:background="@drawable/rounded_corners"
         android:orientation="vertical"
+        android:padding="16dp"
         app:layout_constraintEnd_toStartOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/text_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            tools:text="Result"
+            android:fontFamily="@font/death_star"/>
+
+    </LinearLayout>
 
     <GridLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:columnCount="4"
+        android:padding="16dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/result_layout"
-        android:layout_margin="10dp">
+        app:layout_constraintTop_toBottomOf="@id/result_layout">
 
-        <Button
-            android:id="@+id/key_1"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_clean"
+            style="@style/style_btn.operation"
             android:layout_width="0dp"
             android:layout_height="92dp"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal"
-            android:background="@drawable/rounded_button_num"
-            android:text="@string/_1" />
+            android:background="@drawable/rounded_button_ac"
+            android:text="@string/key_AC" />
 
-        <Button
-            android:id="@+id/key_2"
-            android:layout_width="0dp"
-            android:layout_height="92dp"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill_horizontal"
-            android:background="@drawable/rounded_button_num"
-            android:text="@string/_2" />
-
-        <Button
-            android:id="@+id/key_3"
-            android:layout_width="0dp"
-            android:layout_height="92dp"
-            android:layout_columnWeight="1"
-            android:layout_gravity="fill_horizontal"
-            android:background="@drawable/rounded_button_num"
-            android:text="@string/_3" />
-
-        <Button
-            android:id="@+id/key_plus"
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_exponentiation"
+            style="@style/style_btn.operation"
             android:layout_width="0dp"
             android:layout_height="92dp"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal"
             android:background="@drawable/rounded_button_operation"
-            android:text="@string/_plus" />
+            android:text="@string/key_exponentiation" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_module"
+            style="@style/style_btn.operation"
+            android:layout_width="0dp"
+            android:layout_height="92dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/rounded_button_operation"
+            android:text="@string/key_module" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_sqrt"
+            style="@style/style_btn.operation"
+            android:layout_width="0dp"
+            android:layout_height="92dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/rounded_button_operation"
+            android:text="@string/key_sqrt" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_1"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="92dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/rounded_button_num"
+            android:text="@string/key_1" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_2"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="92dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/rounded_button_num"
+            android:text="@string/key_2" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_3"
+            android:layout_margin="2dp"
+            android:layout_width="0dp"
+            android:layout_height="92dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/rounded_button_num"
+            android:text="@string/key_3" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/key_plus"
+            style="@style/style_btn.operation"
+            android:layout_width="0dp"
+            android:layout_height="92dp"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill_horizontal"
+            android:background="@drawable/rounded_button_operation"
+            android:text="@string/key_plus" />
+
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/key_4"
+            android:layout_margin="2dp"
             android:layout_width="0dp"
             android:layout_height="92dp"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal"
             android:background="@drawable/rounded_button_num"
-            android:text="@string/_4" />
+            android:text="@string/key_4" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/key_5"
+            android:layout_margin="2dp"
             android:layout_width="0dp"
             android:layout_height="92dp"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal"
             android:background="@drawable/rounded_button_num"
-            android:text="@string/_5" />
+            android:text="@string/key_5" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/key_6"
+            android:layout_margin="2dp"
             android:layout_width="0dp"
             android:layout_height="92dp"
             android:layout_columnWeight="1"
@@ -90,86 +147,95 @@
             android:background="@drawable/rounded_button_num"
             android:text="@string/_6" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/key_minus"
+            style="@style/style_btn.operation"
             android:layout_width="0dp"
             android:layout_height="92dp"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal"
             android:background="@drawable/rounded_button_operation"
-            android:text="@string/_minus" />
+            android:text="@string/key_minus" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/key_7"
+            android:layout_margin="2dp"
             android:layout_width="0dp"
             android:layout_height="92dp"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal"
             android:background="@drawable/rounded_button_num"
-            android:text="@string/_7" />
+            android:text="@string/key_7" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/key_8"
+            android:layout_margin="2dp"
             android:layout_width="0dp"
             android:layout_height="92dp"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal"
             android:background="@drawable/rounded_button_num"
-            android:text="@string/_8" />
+            android:text="@string/key_8" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/key_9"
+            android:layout_margin="2dp"
             android:layout_width="0dp"
             android:layout_height="92dp"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal"
             android:background="@drawable/rounded_button_num"
-            android:text="@string/_9" />
+            android:text="@string/key_9" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/key_mult"
+            style="@style/style_btn.operation"
             android:layout_width="0dp"
             android:layout_height="92dp"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal"
             android:background="@drawable/rounded_button_operation"
-            android:text="@string/_mult" />
+            android:text="@string/key_mult" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/key_dot"
+            android:layout_margin="2dp"
             android:layout_width="0dp"
             android:layout_height="92dp"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal"
             android:background="@drawable/rounded_button_num"
-            android:text="@string/_dot" />
+            android:text="@string/key_dot" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/key_0"
+            android:layout_margin="2dp"
             android:layout_width="0dp"
             android:layout_height="92dp"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal"
             android:background="@drawable/rounded_button_num"
-            android:text="@string/_0" />
+            android:text="@string/key_0" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/key_summ"
+            style="@style/style_btn.operation"
             android:layout_width="0dp"
             android:layout_height="92dp"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal"
             android:background="@drawable/rounded_button_operation"
-            android:text="@string/_summ" />
+            android:text="@string/key_summ" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/key_div"
+            style="@style/style_btn.operation"
             android:layout_width="0dp"
             android:layout_height="92dp"
             android:layout_columnWeight="1"
             android:layout_gravity="fill_horizontal"
             android:background="@drawable/rounded_button_operation"
-            android:text="@string/_div" />
+            android:text="@string/key_div" />
 
 
     </GridLayout>

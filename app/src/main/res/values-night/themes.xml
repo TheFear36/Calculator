@@ -12,5 +12,10 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="materialButtonStyle">@style/style_btn</item>
+        <item name="fontFamily">@font/death_star</item>
+        <item name="backgroundColor">@color/background</item>
+        <item name="android:textColor">@color/text_result</item>
+        <item name="android:textSize">60sp</item>
     </style>
 </resources>
