@@ -10,6 +10,6 @@
     <corners
         android:bottomLeftRadius="50dp"
         android:bottomRightRadius="50dp"/>
-    <solid android:color="@color/background_result" />
+    <solid android:color="@color/background_result_day" />
 
 </shape>
