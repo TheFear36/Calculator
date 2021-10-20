@@ -17,8 +17,6 @@ public class CalculatorImp implements Calculator {
                 return argOne * argOne;
             case SQRT:
                 return Math.sqrt(argOne);
-            case MODUL:
-                return (int)(argOne/2);
         }
         return 0.0;
     }

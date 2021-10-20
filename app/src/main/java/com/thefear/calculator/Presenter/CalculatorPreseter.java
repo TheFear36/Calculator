@@ -1,9 +1,13 @@
 package com.thefear.calculator.Presenter;
 
+import com.thefear.calculator.R;
 import com.thefear.calculator.logic.Calculator;
 import com.thefear.calculator.logic.Operation;
+import com.thefear.calculator.logic.Theme;
 import com.thefear.calculator.ui.CalculatorView;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.SplittableRandom;
 
 public class CalculatorPreseter {
@@ -57,7 +61,7 @@ public class CalculatorPreseter {
         isDotPressed = false;
     }
 
-    public void onSummKeyPressed() {
+    public void onEqualsKeyPressed() {
         double result = calculator.performOperation(argOne, argTwo, operationSelected);
         displayResult(result);
     }

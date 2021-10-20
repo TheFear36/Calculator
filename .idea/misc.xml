@@ -3,12 +3,28 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/squan/AndroidStudioProjects/Calculator/app/src/main/res/drawable-notnight/rounded_button_num.xml" value="0.3769230769230769" />
+        <entry key="..\:/Users/squan/AndroidStudioProjects/Calculator/app/src/main/res/drawable-notnight/rounded_corners.xml" value="0.234375" />
         <entry key="..\:/Users/squan/AndroidStudioProjects/Calculator/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.3828125" />
+        <entry key="..\:/Users/squan/AndroidStudioProjects/Calculator/app/src/main/res/drawable/background_style.xml" value="0.3769230769230769" />
+        <entry key="..\:/Users/squan/AndroidStudioProjects/Calculator/app/src/main/res/drawable/ic_baseline_check_24.xml" value="0.3828125" />
+        <entry key="..\:/Users/squan/AndroidStudioProjects/Calculator/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.20185185185185187" />
+        <entry key="..\:/Users/squan/AndroidStudioProjects/Calculator/app/src/main/res/drawable/ic_blue_theme.xml" value="0.3828125" />
+        <entry key="..\:/Users/squan/AndroidStudioProjects/Calculator/app/src/main/res/drawable/ic_check.xml" value="0.3828125" />
         <entry key="..\:/Users/squan/AndroidStudioProjects/Calculator/app/src/main/res/drawable/ic_launcher_background.xml" value="0.3828125" />
+        <entry key="..\:/Users/squan/AndroidStudioProjects/Calculator/app/src/main/res/drawable/ic_purple_theme.xml" value="0.3828125" />
+        <entry key="..\:/Users/squan/AndroidStudioProjects/Calculator/app/src/main/res/drawable/new_button.xml" value="0.3828125" />
+        <entry key="..\:/Users/squan/AndroidStudioProjects/Calculator/app/src/main/res/drawable/rounded_button_ac.xml" value="0.3828125" />
         <entry key="..\:/Users/squan/AndroidStudioProjects/Calculator/app/src/main/res/drawable/rounded_button_num.xml" value="0.3828125" />
+        <entry key="..\:/Users/squan/AndroidStudioProjects/Calculator/app/src/main/res/drawable/rounded_button_num_day.xml" value="0.3769230769230769" />
         <entry key="..\:/Users/squan/AndroidStudioProjects/Calculator/app/src/main/res/drawable/rounded_button_operation.xml" value="0.3828125" />
+        <entry key="..\:/Users/squan/AndroidStudioProjects/Calculator/app/src/main/res/drawable/rounded_corners.xml" value="0.3769230769230769" />
         <entry key="..\:/Users/squan/AndroidStudioProjects/Calculator/app/src/main/res/drawable/rounded_cornes.xml" value="0.3828125" />
+        <entry key="..\:/Users/squan/AndroidStudioProjects/Calculator/app/src/main/res/drawable/settings.xml" value="0.3828125" />
+        <entry key="..\:/Users/squan/AndroidStudioProjects/Calculator/app/src/main/res/layout/activity_calculator.xml" value="0.33" />
         <entry key="..\:/Users/squan/AndroidStudioProjects/Calculator/app/src/main/res/layout/activity_main.xml" value="0.36102564102564105" />
+        <entry key="..\:/Users/squan/AndroidStudioProjects/Calculator/app/src/main/res/layout/activity_setting.xml" value="0.5" />
+        <entry key="..\:/Users/squan/AndroidStudioProjects/Calculator/app/src/main/res/layout/item_theme.xml" value="0.36666666666666664" />
       </map>
     </option>
   </component>
@@ -17,5 +33,12 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.36102564102564105" />
+      </ProjectState>
+    </option>
   </component>
 </project>

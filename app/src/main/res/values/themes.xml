@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.Calculator" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimary">@color/num_color_day</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
         <!-- Secondary brand color. -->
@@ -12,10 +12,27 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="materialButtonStyle">@style/style_btn</item>
-        <item name="fontFamily">@font/death_star</item>
-        <item name="backgroundColor">@color/background_day</item>
-        <item name="android:textColor">@color/text_result_day</item>
-        <item name="android:textSize">60sp</item>
+        <item name="android:background">@color/background_day</item>
     </style>
+
+    <style name="Theme.Calculator.Blue">
+        <item name="colorPrimary">@color/nice_green</item>
+
+        <item name="android:background">@color/background_blue</item>
+    </style>
+
+    <style name="Theme.Calculator.Purple">
+        <item name="colorPrimary">@color/operations_color</item>
+
+        <item name="android:background">@color/background_purple</item>
+    </style>
+
+    <style name="Theme.Calculator.Dark" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/operations_color</item>
+        <item name="colorOnPrimary">@color/num_color</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <item name="android:background">@color/background_result_day</item>
+        <item name="android:textColor">@color/num_color</item>
+    </style>
+
 </resources>
