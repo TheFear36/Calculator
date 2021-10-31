@@ -9,8 +9,11 @@
     <color name="white">#FFFFFFFF</color>
     <color name="background">#1e1a15</color>
     <color name="background_day">#fffbf8</color>
+    <color name="background_purple">#b55ce8</color>
+    <color name="background_blue">#06e0f9</color>
+    <color name="red">#DD2C00</color>
     <color name="num_color">#2b2318</color>
-    <color name="num_color_day">#f8f2eb</color>
+    <color name="num_color_day">#263238</color>
     <color name="operations_color">#c3a689</color>
     <color name="background_result">#3c311e</color>
     <color name="background_result_day">#ede3d4</color>

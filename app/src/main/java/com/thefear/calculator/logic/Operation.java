@@ -7,8 +7,7 @@ public enum Operation {
     DIV("/"),
     EXPON("^2"),
     SQRT("√"),
-    MODUL("%"),
-    SUMM("=");
+    EQUALS("=");
 
     private String name;
 
